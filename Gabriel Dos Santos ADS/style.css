@@ -1,0 +1,125 @@
+#loader {
+    display: none;
+    border: 6px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 6px solid blue;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#loadAllComments {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#loadAllComments:hover {
+    background-color: #45a049;
+}
+
+/* Estilo de cards */
+.post {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.post h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.post p {
+    color: #666;
+    font-size: 14px;
+}
+
+.post button {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.post button:hover {
+    background-color: #007B9E;
+}
+
+.comments {
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.comment {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.comment p {
+    margin: 5px 0;
+    font-size: 13px;
+    color: #555;
+}
+
+.comment strong {
+    color: #333;
+}
+
+.comment:last-child {
+    border-bottom: none;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#hideAllComments {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #f53737;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#hideAllComments:hover {
+    background-color: #d32f2f;
+}
+
